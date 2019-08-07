@@ -18,6 +18,40 @@ const example = {
 }
 
 // Write your intern objects here:
+let PersonInfo = {
+  "id": 1,
+  "name": "Mitizi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
+
+let PersonInfo = {
+  "id": 2,
+  "name":"Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
+
+let PersonInfo = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+let PersonInfo = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}
+
+let PersonInfo = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+}
 
 
 // ==== Challenge 2: Reading Object Data ==== 
