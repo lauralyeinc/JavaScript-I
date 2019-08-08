@@ -39,7 +39,7 @@ const Intern3 = {
   "gender": "M"
 }
 
-const Intern4 = {
+let Intern4 = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
@@ -72,7 +72,8 @@ console.log(Intern5["gender"]);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-Intern4.loves = function(speaks)
+
+Intern4 = function(speaks)
 {console.log(kenna.speak("Hello, my name is Kennan!"))};
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
