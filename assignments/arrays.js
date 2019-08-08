@@ -62,13 +62,16 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // }
 
 // ==== Challenge 1 ====
-// The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
+// The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below: 
+//`${this.name}
 
-arr = [inventory]
-for (i = 0; i < arr.length; i++) (`Car 33 is a``${this.car_year}`${this.car_make} `${this.car_model}`);  //`${this.name}
+arr = [inventory];
+for (i = 0; i < arr.length; i++) 
+  console.log(`Car 33 is a ${this.car_year} ${this.car_make} ${this.car_model}`);
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
+
 let lastCar = [inventory];      //0 original answer  50 last number inventory
 for (i = 0; i < inventory.length; i++)     //arr.length
 console.log(lastCar);
@@ -87,7 +90,8 @@ console.log(carModels);
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 
-let carYears = ["car_year"];    //it's looking at "car_year" as a string....
+let carYears = inventory; 
+
 function myfunction() {
 carYears.sort(function(a,b){return a.car_year - b.car_year});
 }
@@ -98,7 +102,15 @@ console.log(carYears);
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 
-// let oldCars = [inventory];
+let oldCars = [CarYears];
+
+for(i = 0; i < carYears.length; i++){
+  if (carYears [i] < 2000 )
+    {oldCars.push(carYears[i]);
+  }
+};
+console.log(oldCars);
+
 // console.log(carYears.sort(function(a,b){return b.car_year - a.car_year}));  
 
 // ==== Challenge 6 ====

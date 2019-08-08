@@ -39,7 +39,7 @@ const Intern3 = {
   "gender": "M"
 }
 
-let Intern4 = {
+const Intern4 = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
@@ -52,8 +52,6 @@ const Intern5 = {
   "email": "adaine5@samsung.com",
   "gender": "F"
 }
-
-
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
@@ -73,14 +71,17 @@ console.log(Intern5["gender"]);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-Intern4 = function(speaks)
-{console.log(kenna.speak("Hello, my name is Kennan!"))};
+Intern2.speak = () => `Hello, my name is ${name}!`;
+
+console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-Intern5.loves = function(multiplyNums) 
-{console.log(antonietta.multiplyNums(3,4))};
+ Intern5.multiplyNums = (Num1,Num2) => Num1 * Num2;
+
+ console.log(multiplyNums(3,4));
+//  console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
