@@ -71,16 +71,14 @@ console.log(Intern5["gender"]);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
- Intern2.speak = () => {`Hello, my name is ${name}!`;}
-
- console.log(speak);
+Intern2.speak = () => {`Hello, my name is ${"name"}!`;}
+  console.log(speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
  Intern5.multiplyNums = (Num1,Num2) => {Num1 * Num2;}
- 
- console.log(multiplyNums(3,4));
+  console.log(multiplyNums(3,4));
 
 
 //  console.log(antonietta.multiplyNums(3,4));
